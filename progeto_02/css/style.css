@@ -1,0 +1,24 @@
+h1{
+    color: blue;
+    font-size:60px
+}
+
+p{
+    color:red;
+    font-size: 50px
+}
+
+/* use "." para puxar uma class */
+.meio{
+    color:rgb(145, 145, 0);
+}
+
+img {
+    border: 10px solid black;
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    background-color: red;
+    border-radius: 15px;
+    
+}
