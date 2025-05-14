@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+</head>
+<style>
+    .texto{
+        background-color: tomato;
+        color:white
+    }
+
+    #texto{
+        background-color: burlywood;
+    }
+</style>
+<body>
+    <h1 class="texto">Aula de JS</h1>
+
+    <p class="texto" id="textoPersonalizado">aqui ta o texto personalizado</p>
+
+    <script>
+/*
++ mais/concatenar
+- menos
+* multiplicar
+/ dividir
+*/
+
+        console.log("ola mundo")
+        variavel = 1+1-1*1
+        txt = 'texto' 
+        verdadeiroFalso = true
+        console.log(variavel, txt, verdadeiroFalso)
+        console.log(1 + parseInt('7')) //tranformou '7' em 7 (int)
+
+
+
+        /* operadors logicos
+        == igual
+        != diferente
+        > maior que
+        < menor que
+        >= maior ou igual a
+        <= menor ou igual a
+        */
+
+        if (1 == 1){
+            console.log("to no if")
+        } else if (2 == 2){
+            console.log("to no else if")
+            } else {
+                console.log("to no else")
+            };
+
+        for (let i = 0; i < 5; i++) {
+         console.log('valor de i: ' + i) 
+        }   
+
+        contador = 0
+        while (contador <= 10) { 
+            contador ++
+
+            if (contador == 5){ // igonora o valor informado
+                continue
+            }
+
+            if (contador == 8){ //para o comando quando der o valor informado
+                break
+            }
+
+            console.log("valor do contador: " + contador)
+        }   
+
+        alert("deseja continuar?") //mostra uma caixa de alerta na tela com msg
+
+
+        function FuncaoTop() { //função em JS
+            alert("função top")
+        }
+
+        function adicionarTexto(){
+            alert('deseja adicionar texto')
+            //console.log(document.getElementById('textoPersonalizado'))
+            // DOM --> document object model
+            
+            textoLocal = document.getElementById('textoPersonalizado').innerHTML //cria uma variavel com onde puxa um ID
+            console.log(textoLocal)
+
+            document.getElementById('textoPersonalizado').innerHTML = 'um texto cabuloso' //muda o texto do ID
+        }
+
+
+
+    </script>
+</body>
+
+
+</html>
