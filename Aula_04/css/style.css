@@ -1,0 +1,31 @@
+/* impota fonts */
+@import url('../fonts/RobotoMono-VariableFont_wght.ttf');
+
+*{
+    /* tira a margem de todas as marção */
+    margin: 0;
+}
+
+.fundo {
+    /* adiciona uma imagem como background */
+    background-image: url('../img/japanese-oni.gif');
+    /* corta a imagem */
+    background-size: cover;
+    /* usa 100% da tela */
+    height: 100vh;
+
+    /* contraliza a imagem */
+    align-content: center;
+}
+
+.titulo{
+    /* alinha no centro da tela */
+    font-size: 50px;
+    color: white;   
+    text-align: center;
+
+    /* coloca a fonte q vc quer usar */
+    font-family:'Roboto', 'Times New Roman', 'Arial';
+    font-weight: 800;
+    font-style: italic;
+}
