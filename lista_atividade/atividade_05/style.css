@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Eagle+Lake&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    color: rgb(0, 0, 0)     ;
+    text-align: center;
+    font-family: 'EB Garamond';
+}
+
+
+body {
+    background-image: url('./img/a-lonely-man.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+.titulo {
+    color: blue;
+    font-size: 90px;
+}
+
+
+a {
+    font-style: oblique;
+    color: rgb(187, 26, 26);
+}
