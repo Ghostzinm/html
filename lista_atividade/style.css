@@ -1,0 +1,21 @@
+body{
+  background-color: #0f0f0f;
+}
+
+
+.button {   
+    background-color: #00012c; 
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50px;
+  }
+
+  .button:hover {
+    background-color: #010120;
+    box-shadow: 6px -7px 89px 10px rgba(255, 255, 255, 0.66);
+    -webkit-box-shadow: 6px -7px 89px 10px rgba(255, 255, 255, 0.66);
+    -moz-box-shadow: 6px -7px 89px 10px rgba(255, 255, 255, 0.66);
+  }
