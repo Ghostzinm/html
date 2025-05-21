@@ -1,0 +1,55 @@
+@font-face {
+    font-family:'capa';
+    src: url('./fonts/pricedow.ttf');
+}
+
+@font-face {
+    font-family: 'sec';
+    src: url('./fonts/Beckett.ttf');
+}
+* {
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+
+body {
+    background: #030a00;
+}
+
+
+h1{
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 1px; /* largura da borda */
+    -webkit-text-stroke-color: #000000; /* cor da borda */
+    font-style: normal;
+    font-size: 100px;
+    font-family:'capa';
+}
+
+p{
+    color: antiquewhite;
+}
+
+li{
+    text-align: start;
+    color: antiquewhite;
+}
+
+img{
+    box-shadow: 6px -7px 89px 10px rgba(255, 255, 255, 0.66);
+    -webkit-box-shadow: 6px -7px 89px 10px rgba(255, 255, 255, 0.66);
+    -moz-box-shadow: 6px -7px 89px 10px rgba(255, 255, 255, 0.66);
+    height: 200px;
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+
+a{
+    color: aqua;
+}
+
+a:hover{
+    color:green
+}
