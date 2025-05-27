@@ -1,20 +1,75 @@
-body{
-  background-color: #0f0f0f;
+*{
+    margin: 0;
+}
+
+.fundo{
+    background-color: #012030;
+    height: 100%;
+}
+
+.grade {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 500px 500px 500px;
+}
+
+p{
+    margin: 10px;
+}
+
+.quadrado-pai {
+
+    width: 270px;
+    height: 370px;
+
+    /* margin: 10px 20px 20px 100px; */
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+
+
+    padding: 10px;
+
+
+    background-color: #05171f;
+    color: #DAF0BA;
+    border-radius: 20px;
+    text-align: center;
+    border: 3px solid black;
 }
 
 
-.button {   
-    background-color: #00012c; 
-    color: white;
-    padding: 15px 32px;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 50px;
-  }
+.quadrado-pai img{
+    height: 20  0px;
+    width: 100%;
+    border-radius: 20px;
 
-  .button:hover {
-    background-color: #010120;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.quadrado-pai a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    text-transform: lowercase;
+    font-family: 'Trebuchet MS';
+
+    background-color: #012030;
+
+    padding: 5px;
+    border-radius: 20px;
+    border: 3px solid #3f4636;
+    
+    transition: 0.5s;
+}
+
+.quadrado-pai a:hover {
+    transition: 0.5s;
+    border: 3px solid #010120;
+    background-color: #3f4636;
     box-shadow: 6px -7px 89px 10px rgba(255, 255, 255, 0.66);
     -webkit-box-shadow: 6px -7px 89px 10px rgba(255, 255, 255, 0.66);
     -moz-box-shadow: 6px -7px 89px 10px rgba(255, 255, 255, 0.66);
