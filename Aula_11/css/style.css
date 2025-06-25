@@ -1,0 +1,11 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+ 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    transition: 1s;
+}
