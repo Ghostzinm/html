@@ -1,0 +1,9 @@
+.card-title {
+    text-transform: capitalize;
+}
+
+.pokemin-img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
