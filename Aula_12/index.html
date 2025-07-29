@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-direction: column;
+    }
+</style>
+
+<body>
+    <div class="container">
+
+        <label for="textoImportante">digita no campo abaixo</label>
+        <div>
+            <input type="" placeholder="Digite aqui" id="textoImportante">
+            <button onclick="javascript:mostrarAlerta()">enviar</button>
+        </div>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script>
+        function mostrarAlerta() {
+            const campoTxt = document.getElementById('textoImportante');
+            const resultado = document.getElementById('resultado');
+
+           // console.log(campoTxt.value)
+           // alert('voce digitou: ' + campoTxt.value)
+
+           let html = `<p> ${campoTxt.value} </p>`
+           resultado.innerHTML = html;
+        }
+    </script>
+</body>
+
+</html>
