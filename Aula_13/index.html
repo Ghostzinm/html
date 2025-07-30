@@ -27,6 +27,7 @@
             fetch("https://pokeapi.co/api/v2/pokemon/" + id)
             return fetch("https://pokeapi.co/api/v2/pokemon/" + id)
                 .then(function (resposta) {
+                    
                     return resposta.json();
                 })
         }
@@ -60,7 +61,7 @@
 
         }
 
-        carregarPokemon
+        carregarPokemon()
 
     </script>
 </body>
