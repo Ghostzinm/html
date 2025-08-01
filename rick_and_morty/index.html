@@ -19,8 +19,8 @@
         <div class="input-group mb-3">
             <input id="txtInput" type="text" class="form-control" placeholder="Digite o nome de um persongem"
                 aria-label="Recipient’s username" aria-describedby="button-addon2">
-            <button id="bntPsq" class="btn btn-outline-secondary" type="button" id="button-addon2"
-                onclick="javascript:carregarPersona()">pesquisar</button>
+            <button id="bntPsq" class="btn btn-outline-secondary" type="button"
+                onclick="carregarInpunt()">pesquisar</button>
         </div>
     </main>
 
@@ -43,6 +43,46 @@
                     return resposta.json();
                 })
         }
+
+
+        async function carregarInpunt() {
+            let valorCampo = txtInput.value.trim();
+
+
+            const resposta = await fetch("https://rickandmortyapi.com/api/character/?name=" + valorCampo);
+            const dados = await resposta.json();
+
+            container.innerHTML = '';
+
+            if (dados.results && dados.results.length > 0) {
+                dados.results.forEach(personaAtual => {
+                    const { id, name, image, species, gender } = personaAtual;
+
+                    const coluna = document.createElement('div');
+                    coluna.className = 'col';
+                    coluna.innerHTML = `
+                    <div class="card h-100 shadow-sm"> 
+                        <div class="card-body text-center"> 
+                            <img src="${image}" alt="${name}" class="persona-img mb-2">
+                            <h4 class="card-title">${name}</h4>
+                            <h6>Tipo: ${species}</h6>
+                            <h6>Gênero: ${gender}</h6>
+                            <p class="card-text text-muted">#${id}</p>
+                        </div>
+                    </div>
+                `;
+
+                    container.appendChild(coluna);
+                });
+            } else {
+                container.innerHTML = `<p class="text-center">Personagem não encontrado.</p>`;
+            }
+
+
+        }
+
+
+
 
         async function carregarPersona() {
             for (i = 1; i <= 826; i++) {
