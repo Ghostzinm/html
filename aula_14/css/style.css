@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+}
+
+:root{
+    --txt: #000000;
+}
+
+.container {
+    /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/fundo.jpg'); */
+    margin: 0;
+    height: 100vh;
+    background-color: tomato;
+}
+
+
+.titulo {
+    color: var(--txt);
+    text-align: center;
+}
+
+.lista{
+    color: var(--txt);
+    display: flex;
+    
+}
+
+.gtr {
+    margin-left: 150px;
+}
+
+p {
+    color: var(--txt);
+    justify-self: center;
+    font-size: 18px;
+    margin-top: 50px;
+    width: 90%;
+}
+
+img{
+    border-radius: 20px;
+    margin: 50px 15px 10px;
+}
